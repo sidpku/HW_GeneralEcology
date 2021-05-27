@@ -36,7 +36,7 @@ Author: Sid
 * homework-02-analysis整合了数据，是方便分析用的。
 * calculation.md 是进行分析的时候进行的一部分演算。
 
-对部分文件的说明：、
+对部分文件的说明：
 
 * homework-02-data
   * 情境2是我们的第1题（0.05度增温）
