@@ -14,11 +14,11 @@ Csink = zeros(301,6);
 TEMP = zeros(301,6);
 
 %% Pre calculation
-for i=1:2
+for i=1:3
     MAT=5*i-5;
-    Csink(1,(0:3)+i)=GPP_opt * 1.1814/(1+exp(0.2*(TEMP_opt-10-MAT)))./(1+exp(0.3*(-TEMP_opt-10+MAT)))*40./exp(MAT .*log(2)./10);
-    GPP(1,(0:3)+i)= GetGPP(GPP_opt,MAT,TEMP_opt);
-    RES(1,(0:3)+i)= GPP(1,(0:3)+i);
+    Csink(1,[0,3]+i)=GPP_opt * 1.1814/(1+exp(0.2*(TEMP_opt-10-MAT)))./(1+exp(0.3*(-TEMP_opt-10+MAT)))*40./exp(MAT .*log(2)./10);
+    GPP(1,[0,3]+i)= GetGPP(GPP_opt,MAT,TEMP_opt);
+    RES(1,[0,3]+i)= GPP(1,[0,3]+i);
     NEP(1,:) = GPP(1,:)-RES(1,:);
 end
 
