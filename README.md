@@ -29,7 +29,7 @@ Author: Sid
   * Csink是碳库大小
   * NEP是净生态系统生产力
   * 各种增温情景已经在列标题中标出来了，如“5度0.01度”就是初始温度5度的地区，经过300年0.01度/yr的增温。
-* **[Modeling.md](Modeling.md)** ：是进行建模的科学依据、数学分析以及代码说明。
+* **[Modeling.md](Modeling.html)** ：是进行建模的科学依据、数学分析以及代码说明。
 * **第四讲-碳循环part1.pdf**： 是老师上课的课件，因为github是开放的，所以我给加了密码（是老师名字的全拼）。需要不带密码的可以去课程群里下。
 
 Github中的[2020分支](https://github.com/sidpku/HW_GeneralEcology/tree/2020)保存了2020年的数据和分析结果，需要的话可以去那里找。
