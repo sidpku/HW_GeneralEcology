@@ -2,16 +2,16 @@ clc
 clear
 
 %% 定义常量
-GPP_opt = 1018;
-TEMP_opt = 20;
+GPP_opt = 1018; % 最理想状态下的GPP，由题目给定
+TEMP_opt = 20;  % 最理想状态下的温度，由题目给定
 
 %% 定义变量
 
-GPP = zeros(301,6);
-NEP = zeros(301,6);
-RES = zeros(301,6);
-Csink = zeros(301,6);
-TEMP = zeros(301,6);
+GPP = zeros(301,6); 
+NEP = zeros(301,6); 
+RES = zeros(301,6); % 总呼吸 Rh+Ra
+Csink = zeros(301,6);   % 碳库大小
+TEMP = zeros(301,6);    % 温度
 
 %% Pre calculation
 for i=1:3
@@ -40,7 +40,8 @@ for year_index = 2:301
 end
 
 %% save data
-save('simulation-data');
+filename = ['simulation_data_',datestr(now,'yymmdd_HHMM')];
+save(filename);
 
 %% function
 function GPP=GetGPP(GPP_opt,MAT,TEMP_opt)
