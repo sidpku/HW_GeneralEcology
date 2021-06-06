@@ -118,3 +118,9 @@ GetRES()：根据式5
 
 其中关于时间t，在调用函数的时候考虑了，如`t-1`对应了`year_index-1`
 
+
+
+---
+
+项目文件保存在我的[Github](https://github.com/sidpku/HW_GeneralEcology)上。
+
